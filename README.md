@@ -9,6 +9,14 @@ camera frame -> sliding-window CNN -> detections (px) -> panel coordinates (mm)
              -> merge duplicates across overlapping frames -> defect map + report
 ```
 
+## Overview
+
+![Pipeline diagram](docs/pipeline.svg)
+
+![Illustrative defect map](docs/defect_map_illustration.svg)
+
+*The defect map above is a hand-drawn illustration of the kind of output `mapper.py` produces. It is not a measured result. Real outputs are written to `runs/latest/` after a scan.*
+
 ## Files
 
 | File | Purpose |
