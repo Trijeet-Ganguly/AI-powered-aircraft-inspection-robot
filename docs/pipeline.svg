@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1000" height="360" fill="#0d1b2a"/>
+  <text x="500" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#e0e1dd">AI Aircraft Inspection Robot: Pipeline</text>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8ecae6"/></marker></defs>
+  <g font-size="15" fill="#0d1b2a" text-anchor="middle" font-weight="600">
+    <rect x="30" y="120" width="140" height="90" rx="12" fill="#8ecae6"/><text x="100" y="160">Gantry / crawler</text><text x="100" y="182">raster scan</text>
+    <rect x="215" y="120" width="140" height="90" rx="12" fill="#a8dadc"/><text x="285" y="160">Camera</text><text x="285" y="182">frames</text>
+    <rect x="400" y="120" width="140" height="90" rx="12" fill="#ffb703"/><text x="470" y="160">Sliding-window</text><text x="470" y="182">CNN (ResNet18)</text>
+    <rect x="585" y="120" width="140" height="90" rx="12" fill="#fb8500"/><text x="655" y="160">Pixels to panel</text><text x="655" y="182">coordinates (mm)</text>
+    <rect x="770" y="120" width="200" height="90" rx="12" fill="#90be6d"/><text x="870" y="153">Merge duplicates</text><text x="870" y="175">Defect map +</text><text x="870" y="197">CSV / JSON report</text>
+  </g>
+  <g stroke="#8ecae6" stroke-width="3" fill="none" marker-end="url(#a)">
+    <line x1="172" y1="165" x2="212" y2="165"/><line x1="357" y1="165" x2="397" y2="165"/><line x1="542" y1="165" x2="582" y2="165"/><line x1="727" y1="165" x2="767" y2="165"/>
+  </g>
+  <g font-size="14" fill="#e0e1dd" text-anchor="middle">
+    <text x="470" y="250">Classes: clean, corrosion, crack, dent</text>
+    <text x="500" y="300" fill="#8ecae6">Diagram of the system design implemented in this repository</text>
+  </g>
+</svg>
